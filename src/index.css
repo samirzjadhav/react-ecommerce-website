@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#fff];
+}
+
+.background {
+  @apply bg-[#f6f9fc] py-[50px];
+}
+
+.container {
+  @apply max-w-[90%] m-auto;
+}
+
+.d-flex {
+  @apply flex justify-between;
+}
+
+.c-flex {
+  @apply flex justify-between items-center;
+}
+
+a {
+  @apply no-underline text-[#000];
+}
+
+li {
+  @apply list-none;
+}
+
+.RText {
+  @apply text-right;
+}

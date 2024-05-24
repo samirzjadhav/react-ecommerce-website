@@ -6,7 +6,7 @@ const Head = () => {
   return (
     <>
       <section className="head">
-        <div className="container flex">
+        <div className="container flex justify-between">
           <div className="left row flex justify-center items-center">
             <i>
               <FaPhoneAlt />
@@ -17,7 +17,7 @@ const Head = () => {
             </i>
             <label>example@gmail.com</label>
           </div>
-          <div className="right row RTtext flex justify-center items-center gap-[4px]">
+          <div className="right row RTtext flex  gap-[4px]">
             <label>Theme FAQ's</label>
             <label>Need Helps</label>
             <span>🇮🇳</span>
