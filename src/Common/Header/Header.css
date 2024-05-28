@@ -14,3 +14,43 @@
   font-size: 13px;
 }
 /* HEAD END */
+
+/* SEARCH STYLE START */
+
+.search {
+  padding: 20px 0px;
+}
+
+.search .logo img {
+  width: auto;
+  height: auto;
+}
+
+.search-box {
+  width: 80%;
+  border: 2px solid rgba(0, 0, 00.1);
+}
+
+.search-box i {
+  width: 5px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+.search-box span {
+  width: 20%;
+  opacity: 0.5;
+  border-left: 2px solid rgba(0, 0, 00.1);
+  padding: 10px;
+}
