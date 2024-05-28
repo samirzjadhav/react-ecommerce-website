@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { IoChevronDown } from "react-icons/io5";
+import { MdOutlineWindow } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
+import { FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const [MobileMenu, setMobileMenu] = useState();
@@ -8,14 +12,24 @@ const Navbar = () => {
     <>
       <header className="header">
         <div className="container d-flex">
-          <div className="categories d-flex">
-            <span></span>
+          <div className="categories flex">
+            <span>
+              <MdOutlineWindow />
+            </span>
             <h4>
-              Categories <i></i>
+              Categories{" "}
+              <i>
+                <IoChevronDown />
+              </i>
             </h4>
           </div>
           <div className="navlink">
-            <ul className="nav">
+            <ul
+              className={
+                MobileMenu ? "nav-links-MobileMenu" : "link flex capitalize"
+              }
+              onClick={() => setMobileMenu(false)}
+            >
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -40,9 +54,13 @@ const Navbar = () => {
               onClick={() => setMobileMenu(!MobileMenu)}
             >
               {MobileMenu ? (
-                <i className="close home-btn"></i>
+                <i className="close home-btn">
+                  <IoClose />
+                </i>
               ) : (
-                <i className="open"></i>
+                <i className="open">
+                  <FaBars />
+                </i>
               )}
             </button>
           </div>
