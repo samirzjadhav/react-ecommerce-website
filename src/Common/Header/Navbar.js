@@ -12,11 +12,11 @@ const Navbar = () => {
     <>
       <header className="header">
         <div className="container d-flex">
-          <div className="categories flex">
+          <div className="categories flex justify-center items-center gap-[4px]">
             <span>
               <MdOutlineWindow />
             </span>
-            <h4>
+            <h4 className="flex items-center gap-[4px]">
               Categories{" "}
               <i>
                 <IoChevronDown />
@@ -26,7 +26,9 @@ const Navbar = () => {
           <div className="navlink">
             <ul
               className={
-                MobileMenu ? "nav-links-MobileMenu" : "link flex capitalize"
+                MobileMenu
+                  ? "nav-links-MobileMenu"
+                  : "link flex gap-[30px] capitalize"
               }
               onClick={() => setMobileMenu(false)}
             >

@@ -48,9 +48,67 @@
 ::placeholder {
   font-size: 14px;
 }
+
 .search-box span {
   width: 20%;
   opacity: 0.5;
   border-left: 2px solid rgba(0, 0, 00.1);
   padding: 10px;
+}
+
+.cart {
+  position: relative;
+}
+
+.search-box .cart span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #e94560;
+  font-size: 12px;
+  color: #fff;
+}
+
+.categories {
+  display: flex;
+  background-color: #f6f9fc;
+  padding: 0px 30px;
+  border-radius: 5px;
+  height: 6vh;
+  margin-top: 5px;
+}
+
+.categories span {
+  font-size: 30px;
+}
+
+.categories h4 {
+  font-weight: 500;
+}
+
+header {
+  height: 8vh;
+  box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  line-height: 8vh;
+}
+
+header ul li a {
+  transition: 0.5s;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+header ul li a:hover {
+  color: #e94560;
+}
+
+.open {
+  display: none;
 }
