@@ -6,6 +6,10 @@ import { FaRegCircleUser } from "react-icons/fa6";
 import { HiShoppingBag } from "react-icons/hi";
 
 const Search = () => {
+  window.addEventListener("scroll", () => {
+    const search = document.querySelector(".search");
+    search.classList.toggle("active", window.scrollY > 100);
+  });
   return (
     <>
       <section className="search">
