@@ -33,3 +33,12 @@ li {
 .RText {
   @apply text-right;
 }
+
+input,
+button {
+  @apply border-none outline-none bg-none;
+}
+
+.row {
+  width: 50%;
+}
