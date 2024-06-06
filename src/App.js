@@ -1,4 +1,5 @@
 import Header from "./Common/Header/Header";
+import Pages from "./Pages/Pages.js";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -13,7 +14,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact></Route>
+          <Route path="/" exact>
+            <Pages />
+          </Route>
         </Switch>
       </Router>
     </>
