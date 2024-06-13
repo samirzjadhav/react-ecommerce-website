@@ -49,37 +49,26 @@ button {
 
 /*---------category----------*/
 .contentWidth {
-  width: 77%;
+  @apply w-[77%];
 }
 
 .category {
-  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
-  background-color: #fff;
-  width: 23%;
-  height: 510px;
-  padding: 15px 0;
-  border-radius: 5px;
-  margin-top: 5px;
+  @apply shadow-[rgb(43_52_69_/_10%)_0px_4px_16px] bg-white w-[23%] h-[510px] mt-[5px] px-0 py-[15px] rounded-[5px];
 }
 
 .category img {
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
-  object-fit: contain;
+  @apply w-[30px] h-[30px] object-contain mt-2.5;
 }
 
 .category span {
-  margin: 10px 20px;
-  text-transform: capitalize;
+  @apply capitalize mx-5 my-2.5;
 }
 
 .category .box {
-  transition: 0.5s;
-  padding: 0 20px;
+  @apply transition-[0.5s] px-5 py-0 hover:bg-[#ffe1e6] hover:cursor-pointer;
 }
 
-.category .box:hover {
-  background-color: #ffe1e6;
-  cursor: pointer;
+/* Primary button */
+.btn-primary {
+  @apply bg-[#e94560] py-[13px] px-[40px] font-bold text-white rounded-md;
 }
