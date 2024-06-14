@@ -22,12 +22,12 @@ const SlideCard = () => {
           return (
             <>
               <div className="box d-flex mt-[80px]" key={index}>
-                <div className="left">
+                <div className="left h-[400px]">
                   <h1>{value.title}</h1>
                   <p>{value.desc}</p>
                   <button className="btn-primary">Visit Collections</button>
                 </div>
-                <div className="right">
+                <div className="right h-[300px]">
                   <img src={value.cover} alt="" />
                 </div>
               </div>
