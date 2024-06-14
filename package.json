@@ -1,5 +1,5 @@
 {
-  "name": "react-ecommerce-web",
+  "name": "react-ecommerce-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.4"
   }
 }
