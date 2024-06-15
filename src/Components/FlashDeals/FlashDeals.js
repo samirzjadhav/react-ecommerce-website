@@ -5,7 +5,7 @@ const FlashCard = () => {
     <>
       <section className="flash background">
         <div className="container">
-          <div className="heading flex items-center gap-[4px] ">
+          <div className="heading flex items-center">
             <i>
               <FaBolt />
             </i>
