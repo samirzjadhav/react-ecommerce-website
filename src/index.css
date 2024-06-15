@@ -72,3 +72,7 @@ button {
 .btn-primary {
   @apply bg-[#e94560] py-[13px] px-[40px] font-bold text-white rounded-md;
 }
+
+.heading i {
+  @apply text-[#e94560] m-[10px];
+}
