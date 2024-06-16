@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBolt } from "react-icons/fa6";
-const FlashCard = () => {
+
+const FlashCard = ({ productItems }) => {
   return (
     <>
       <section className="flash background">
@@ -11,6 +12,7 @@ const FlashCard = () => {
             </i>
             <h1 className="font-bold text-[24px]">Flash Deals</h1>
           </div>
+          <FlashCard productItems={productItems} />
         </div>
       </section>
     </>
