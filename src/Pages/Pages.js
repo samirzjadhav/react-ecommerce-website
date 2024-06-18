@@ -1,12 +1,12 @@
 import React from "react";
 import Home from "../Components/Mainpages/Home";
-import FlashCard from "../Components/FlashDeals/FlashDeals";
+// import FlashCard from "../Components/FlashDeals/FlashDeals";
 
 const pages = ({ productItems }) => {
   return (
     <>
       <Home />
-      <FlashCard productItems={productItems} />
+      {/* <FlashCard productItems={productItems} /> */}
     </>
   );
 };
