@@ -5,7 +5,7 @@ import FlashCard from "./FlashCard.js";
 const FlashDeals = ({ productItems, addToCart }) => {
   return (
     <>
-      <section className="flash">
+      <section className="flash bg-[#f6f9fc]">
         <div className="container">
           <div className="heading flex">
             <i>

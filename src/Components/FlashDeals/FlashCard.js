@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
-import { FaRegStar } from "react-icons/fa6";
+import { IoMdStar } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -62,14 +62,14 @@ const FlashCard = ({ productItems, addToCart }) => {
                 </div>
                 <div className="product-details">
                   <h3>{productItems.name}</h3>
-                  <div className="rate">
-                    <FaRegStar />
-                    <FaRegStar />
-                    <FaRegStar />
-                    <FaRegStar />
-                    <FaRegStar />
+                  <div className="rate flex">
+                    <IoMdStar fill="#ffcd4e" size={20} />
+                    <IoMdStar fill="#ffcd4e" size={20} />
+                    <IoMdStar fill="#ffcd4e" size={20} />
+                    <IoMdStar fill="#ffcd4e" size={20} />
+                    <IoMdStar fill="#ffcd4e" size={20} />
                   </div>
-                  <div className="price">
+                  <div className="price flex justify-between">
                     <h4>${productItems.price}.00 </h4>
                     {/* step : 3  
                      if hami le button ma click garryo bahne 
