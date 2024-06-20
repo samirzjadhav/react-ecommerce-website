@@ -1,22 +1,23 @@
 import React from "react";
 import { FaBolt } from "react-icons/fa6";
+import FlashCard from "./FlashCard.js";
 
-const FlashCard = ({ productItems }) => {
+const FlashDeals = ({ productItems, addToCart }) => {
   return (
     <>
-      <section className="flash background">
+      <section className="flash">
         <div className="container">
-          <div className="heading flex items-center">
+          <div className="heading flex">
             <i>
               <FaBolt />
             </i>
-            <h1 className="font-bold text-[24px]">Flash Deals</h1>
+            <h1>Flash Delas</h1>
           </div>
-          <FlashCard productItems={productItems} />
+          <FlashCard productItems={productItems} addToCart={addToCart} />
         </div>
       </section>
     </>
   );
 };
 
-export default FlashCard;
+export default FlashDeals;

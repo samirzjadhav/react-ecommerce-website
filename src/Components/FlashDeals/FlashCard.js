@@ -1,54 +1,91 @@
 import React from "react";
+import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const FlashCard = ({ productItems }) => {
+const SampleNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className="control-btn" onClick={onClick}>
+      <button className="next">
+        <i className="fa fa-long-arrow-alt-right"></i>
+      </button>
+    </div>
+  );
+};
+const SamplePrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className="control-btn" onClick={onClick}>
+      <button className="prev">
+        <i className="fa fa-long-arrow-alt-left"></i>
+      </button>
+    </div>
+  );
+};
+const FlashCard = ({ productItems, addToCart }) => {
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount(count + 1);
+  };
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
+
   return (
     <>
-      {productItems.map((product) => {
-        <div className="box">
-          <div className="product">
-            <span className="discount">{productItems.discount}% off</span>
-            <img src={productItems.cover} alt="" />
-            <div className="product-like">
-              <label>0</label>
-              <span></span>
-              <i>
-                <FaRegHeart />
-              </i>
+      <Slider {...settings}>
+        {productItems.map((productItems) => {
+          return (
+            <div className="box">
+              <div className="product mtop">
+                <div className="img">
+                  <span className="discount">{productItems.discount}% Off</span>
+                  <img src={productItems.cover} alt="" />
+                  <div className="product-like">
+                    <label>{count}</label> <br />
+                    <i onClick={increment}>
+                      {" "}
+                      <FaRegHeart />
+                    </i>
+                  </div>
+                </div>
+                <div className="product-details">
+                  <h3>{productItems.name}</h3>
+                  <div className="rate">
+                    <FaRegStar />
+                    <FaRegStar />
+                    <FaRegStar />
+                    <FaRegStar />
+                    <FaRegStar />
+                  </div>
+                  <div className="price">
+                    <h4>${productItems.price}.00 </h4>
+                    {/* step : 3  
+                     if hami le button ma click garryo bahne 
+                    */}
+                    <button onClick={() => addToCart(productItems)}>
+                      <i>
+                        <FaPlus />
+                      </i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="product-details">
-            <h3>{productItems.name}</h3>
-            <div className="rate">
-              <i>
-                <FaRegStar />
-              </i>
-              <i>
-                <FaRegStar />
-              </i>
-              <i>
-                <FaRegStar />
-              </i>
-              <i>
-                <FaRegStar />
-              </i>
-              <i>
-                <FaRegStar />
-              </i>
-            </div>
-            <div className="price">
-              <h4>{productItems.price}</h4>
-              <button>
-                <i>
-                  <FaPlus />
-                </i>
-              </button>
-            </div>
-          </div>
-        </div>;
-      })}
+          );
+        })}
+      </Slider>
     </>
   );
 };

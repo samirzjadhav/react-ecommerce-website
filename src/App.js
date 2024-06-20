@@ -7,13 +7,13 @@ import {
   Route,
   Link,
 } from "react-router-dom/cjs/react-router-dom.min";
-// import Data from "./Components/FlashDeals/Data.js";
+import Data from "./Components/FlashDeals/Data.js";
 import { useState } from "react";
 
 function App() {
-  // const { productItems } = Data;
+  const { productItems } = Data;
 
-  // const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   return (
     <>
@@ -21,7 +21,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact>
-            {/* <Pages productItems={productItems} /> */}
+            <Pages productItems={productItems} />
           </Route>
         </Switch>
       </Router>
