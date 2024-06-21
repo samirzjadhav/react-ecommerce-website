@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBolt } from "react-icons/fa6";
 import FlashCard from "./FlashCard.js";
+import "./style.css";
 
 const FlashDeals = ({ productItems, addToCart }) => {
   return (

@@ -76,3 +76,103 @@ button {
 .heading i {
   @apply text-[#e94560] m-[10px];
 }
+
+/*---------product-----------*/
+.product {
+  @apply relative shadow-[rgb(3_0_71_/_9%)_0px_1px_3px] m-2.5 p-5 rounded-lg;
+  background: #fff;
+}
+
+.product h3 {
+  @apply font-medium text-[17px];
+}
+.product h4{
+  @apply font-bold text-[20px];
+}
+
+.product .rate i {
+  @apply text-[15px] text-[#ffcd4e] ml-0 mr-[5px] my-[5px];
+}
+
+.product .price {
+  @apply flex justify-between text-[#e94560];
+}
+
+.price button {
+  @apply text-[#e94560] text-xl transition-[0.5s] border w-[35px] h-[35px] rounded-[5px] border-solid border-[rgb(3_0_71_/_9%)] hover:cursor-pointer hover:bg-[#e94560] hover:text-white;
+  background: none;
+}
+
+.product-like {
+  @apply absolute opacity-0 transition-[0.5s] m-2.5 right-0 top-0;
+  @apply flex items-center justify-center flex-col;
+}
+
+.product-like label {
+  @apply bg-[#0f3460] text-xs text-[white] px-2.5 py-px rounded-[50px];
+}
+
+.product-like i {
+  @apply text-xl mx-[3px] my-2.5;
+}
+
+.product:hover .product-like {
+  @apply opacity-100;
+}
+
+.price button{
+  @apply flex justify-center items-center;
+}
+
+/*---------product-----------*/
+/*----- control btn -------*/
+.control-btn .next,
+.control-btn .prev {
+  @apply absolute w-[50px] h-[50px] leading-[60px] z-[5] rounded-[50%] top-[40%];
+  @apply flex justify-center items-center;
+  background: #0f3460;
+  transform: 0.5s;
+}
+
+.control-btn .prev {
+  @apply -left-5;
+}
+
+.control-btn .next {
+  @apply -right-5;
+}
+
+.control-btn .prev i,
+.control-btn .next i {
+  @apply text-xl transition-[0.5s] text-white;
+}
+
+.control-btn .prev:hover,
+.control-btn .next:hover {
+  @apply text-[white] cursor-pointer;
+  background: #e94560;
+}
+
+/*----- control btn -------*/
+/*----- heading -------*/
+.heading .heading-left i {
+  @apply text-3xl;
+}
+
+.heading .heading-left h2 {
+  @apply text-[25px] m-[5px];
+}
+
+.heading .heading-right i,
+.heading .heading-right {
+  @apply text-right text-[grey];
+}
+
+/*----- heading -------*/
+.grid1 {
+  @apply grid grid-cols-[repeat(6,1fr)] gap-[30px];
+}
+
+.grid2 {
+  @apply grid grid-cols-[repeat(4,1fr)] gap-2.5;
+}

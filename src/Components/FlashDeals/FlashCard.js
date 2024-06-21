@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { IoMdStar } from "react-icons/io";
 import { FaPlus } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,7 +14,9 @@ const SampleNextArrow = (props) => {
   return (
     <div className="control-btn" onClick={onClick}>
       <button className="next">
-        <i className="fa fa-long-arrow-alt-right"></i>
+        <i>
+          <FaArrowRightLong />
+        </i>
       </button>
     </div>
   );
@@ -22,7 +26,9 @@ const SamplePrevArrow = (props) => {
   return (
     <div className="control-btn" onClick={onClick}>
       <button className="prev">
-        <i className="fa fa-long-arrow-alt-left"></i>
+        <i>
+          <FaArrowLeft />
+        </i>
       </button>
     </div>
   );
