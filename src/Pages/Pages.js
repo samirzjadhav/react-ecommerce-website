@@ -2,10 +2,10 @@ import React from "react";
 import Home from "../Components/Mainpages/Home";
 import FlashCard from "../Components/FlashDeals/FlashDeals";
 
-const pages = ({ productItems }) => {
+const pages = ({ productItems, cartItem, addToCart }) => {
   return (
     <>
-      <Home />
+      <Home cartItem={cartItem} />
       <FlashCard productItems={productItems} />
     </>
   );

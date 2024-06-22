@@ -77,7 +77,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                   <div className="price flex justify-between">
                     <h4>${productItems.price}.00 </h4>
-                    {/* step : 3  
+                    {/* step : 3 
                      if hami le button ma click garryo bahne 
                     */}
                     <button onClick={() => addToCart(productItems)}>

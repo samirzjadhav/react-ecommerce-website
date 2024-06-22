@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { HiShoppingBag } from "react-icons/hi";
 
-const Search = () => {
+const Search = ({ cartItem }) => {
   window.addEventListener("scroll", () => {
     const search = document.querySelector(".search");
     search.classList.toggle("active", window.scrollY > 100);
@@ -34,7 +34,7 @@ const Search = () => {
               <i>
                 <HiShoppingBag />
               </i>
-              <span>0</span>
+              <span>{cartItem.length === 0 ? "" : cartItem.length}</span>
             </Link>
           </div>
         </div>
