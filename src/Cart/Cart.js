@@ -10,7 +10,12 @@ const Cart = ({ cartItem, addToCart }) => {
               <h1 className="no-items Product"> No items are add on cart</h1>
             )}
             {cartItem.map((item) => {
-              const productQty = item.price * item.qty;
+              const productQty = item.price * item.productQty;
+              return (
+                <div className="cart-list product flex">
+                  <img src={item.cover} alt="" />
+                </div>
+              );
             })}
           </div>
         </div>

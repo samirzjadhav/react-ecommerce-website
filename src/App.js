@@ -19,7 +19,7 @@ function App() {
           item.id === product.id ? { qty: productExit.qty + 1 } : item
         )
       );
-    }
+    } else setCartItem([...cartItem, { ...product, qty: 1 }]);
   };
 
   return (
