@@ -47,6 +47,14 @@ button {
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
 }
 
+.icon-circle {
+  @apply bg-[#f3f5f9] h-[50px] leading-[50px] text-center w-[50px] ml-5 rounded-[50%];
+}
+
+.search .cart span {
+  @apply bg-[#e94560] text-white text-xs h-5 absolute text-center w-5 rounded-[50%] right-0 -top-2.5;
+}
+
 /*---------category----------*/
 .contentWidth {
   @apply w-[77%];
@@ -86,7 +94,7 @@ button {
 .product h3 {
   @apply font-medium text-[17px];
 }
-.product h4{
+.product h4 {
   @apply font-bold text-[20px];
 }
 
@@ -120,7 +128,7 @@ button {
   @apply opacity-100;
 }
 
-.price button{
+.price button {
   @apply flex justify-center items-center;
 }
 

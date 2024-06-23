@@ -26,16 +26,17 @@ const Search = ({ cartItem }) => {
             <span>All category</span>
           </div>
           <div className="icon flex width">
-            <i>
+            <i className="icon-circle flex justify-center items-center">
               <FaRegCircleUser />
             </i>
-            <div className="cart"></div>
-            <Link to="/cart">
-              <i>
-                <HiShoppingBag />
-              </i>
-              <span>{cartItem.length === 0 ? "" : cartItem.length}</span>
-            </Link>
+            <div className="cart w-[50px] flex justify-center items-center icon-circle">
+              <Link to="/cart">
+                <i>
+                  <HiShoppingBag />
+                </i>
+                <span>{cartItem.length === 0 ? "" : cartItem.length}</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
