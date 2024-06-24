@@ -132,6 +132,11 @@ button {
   @apply flex justify-center items-center;
 }
 
+.discount {
+  @apply text-white text-xs absolute m-2.5 px-2.5 py-[3px] rounded-[50px] left-0 top-0;
+  background: #e94560;
+}
+
 /*---------product-----------*/
 /*----- control btn -------*/
 .control-btn .next,
