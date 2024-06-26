@@ -85,6 +85,11 @@ button {
   @apply text-[#e94560] m-[10px];
 }
 
+.heading h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 /*---------product-----------*/
 .product {
   @apply relative shadow-[rgb(3_0_71_/_9%)_0px_1px_3px] m-2.5 p-5 rounded-lg;
