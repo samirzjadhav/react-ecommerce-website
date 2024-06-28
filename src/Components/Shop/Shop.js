@@ -2,9 +2,10 @@ import React from "react";
 import Catg from "./Catg.js";
 import ShopCart from "./ShopCart.js";
 import { FaCaretRight } from "react-icons/fa";
+import Sdata from "./Sdata"; // Make sure to import Sdata
 import "./style.css";
 
-const Shop = (shopItems, addToCart) => {
+const Shop = ({ shopItems, addToCart }) => {
   return (
     <>
       <section className="shop background">
@@ -23,7 +24,6 @@ const Shop = (shopItems, addToCart) => {
               </div>
             </div>
             <div className="product-content grid3">
-              {" "}
               <ShopCart addToCart={addToCart} shopItems={shopItems} />
             </div>
           </div>
@@ -33,4 +33,13 @@ const Shop = (shopItems, addToCart) => {
   );
 };
 
-export default Shop;
+// Example of how you might use the Shop component with props
+const ParentComponent = () => {
+  const addToCart = (item) => {
+    console.log("Add to cart:", item);
+  };
+
+  return <Shop shopItems={Sdata.shopItems} addToCart={addToCart} />;
+};
+
+export default ParentComponent;

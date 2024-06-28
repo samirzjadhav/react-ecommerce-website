@@ -16,6 +16,12 @@ const ShopCart = ({ shopItems = [], addToCart }) => {
     setCount(count + 1);
   };
 
+  // Additional check for undefined or null
+  if (!shopItems) {
+    console.error("shopItems is undefined or null:", shopItems);
+    return null; // Or render some fallback UI
+  }
+
   if (!Array.isArray(shopItems)) {
     console.error("shopItems is not an array:", shopItems);
     return null; // Or render some fallback UI
