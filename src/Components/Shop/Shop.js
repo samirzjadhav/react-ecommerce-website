@@ -6,6 +6,7 @@ import Sdata from "./Sdata"; // Make sure to import Sdata
 import "./style.css";
 
 const Shop = ({ shopItems, addToCart }) => {
+  console.log(addToCart);
   return (
     <>
       <section className="shop background">

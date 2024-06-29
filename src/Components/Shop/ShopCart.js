@@ -29,12 +29,12 @@ const ShopCart = ({ shopItems = [], addToCart }) => {
 
   return (
     <>
-      {shopItems.map((item, index) => (
+      {shopItems.map((shopItems, index) => (
         <div className="box" key={index}>
           <div className="product mtop">
             <div className="img">
-              <span className="discount">{item.discount}% Off</span>
-              <img src={item.cover} alt={item.name} />
+              <span className="discount">{shopItems.discount}% Off</span>
+              <img src={shopItems.cover} alt={shopItems.name} />
               <div className="product-like">
                 <label>{count}</label> <br />
                 <i onClick={increment}>
@@ -44,7 +44,7 @@ const ShopCart = ({ shopItems = [], addToCart }) => {
               </div>
             </div>
             <div className="product-details">
-              <h3>{item.name}</h3>
+              <h3>{shopItems.name}</h3>
               <div className="rate flex">
                 <IoMdStar fill="#ffcd4e" size={20} />
                 <IoMdStar fill="#ffcd4e" size={20} />
@@ -53,8 +53,8 @@ const ShopCart = ({ shopItems = [], addToCart }) => {
                 <IoMdStar fill="#ffcd4e" size={20} />
               </div>
               <div className="price">
-                <h4>${item.price}.00 </h4>
-                <button onClick={() => addToCart(item)}>
+                <h4>${shopItems.price}.00 </h4>
+                <button onClick={() => addToCart(shopItems)}>
                   <i>
                     <FaPlus />
                   </i>
