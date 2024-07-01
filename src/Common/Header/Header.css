@@ -19,6 +19,7 @@
 
 .search {
   padding: 20px 0px;
+  transition: all 0.5s; /* Ensure smooth transition */
 }
 
 .search .logo img {
@@ -113,7 +114,7 @@ header ul li a:hover {
   display: none;
 }
 
-.search .active {
+.search.active {
   height: 12vh;
   position: fixed;
   top: 0;
