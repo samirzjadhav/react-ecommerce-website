@@ -8,11 +8,11 @@ const FlashDeals = ({ productItems, addToCart }) => {
     <>
       <section className="flash bg-[#f6f9fc]">
         <div className="container">
-          <div className="heading flex">
+          <div className="heading flex items-center">
             <i>
               <FaBolt />
             </i>
-            <h1>Flash Delas</h1>
+            <h1 className="text-[25px] font-bold">Flash Delas</h1>
           </div>
           <FlashCard productItems={productItems} addToCart={addToCart} />
         </div>

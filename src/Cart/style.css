@@ -126,3 +126,21 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+@media (max-width: 400px) {
+  .cart-items .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-items .cart-details {
+    width: 100%;
+  }
+
+  .cart-items .cart-total {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 130px;
+  }
+}

@@ -126,6 +126,10 @@ header ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  .contentWidth {
+    width: 100%;
+  }
+
   header ul {
     padding-top: 30px;
   }
@@ -171,7 +175,7 @@ header ul li a:hover {
   }
 
   .open {
-    top: 26%;
+    top: 19%;
     right: 30px;
   }
 
@@ -187,5 +191,33 @@ header ul li a:hover {
     height: 60px;
     width: 60px;
     line-height: 60px;
+  }
+
+  .category {
+    display: none;
+  }
+
+  .product h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .categories {
+    height: 4vh;
+    margin-top: 0px;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .open {
+    top: 9%;
+    right: 30px;
   }
 }

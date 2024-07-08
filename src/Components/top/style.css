@@ -36,3 +36,13 @@
   right: 0;
   top: 2px;
 }
+
+@media (max-width: 768px) {
+  .TopCate .product {
+    padding: 4px;
+  }
+
+  .TopCate .nametop span {
+    padding: 4px 6px;
+  }
+}
